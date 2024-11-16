@@ -1,0 +1,73 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Flujo</title>
+
+    
+    <script>
+
+        var nombre, edad, poblacion;
+
+        do{
+            nombre = prompt("ingrese su nombre: ", "Nombre....");
+        }while(!isNaN(nombre));        
+
+        edad = prompt("ingrese su edad: ", "edad....");
+        
+        while (edad < 0 || edad > 105 || isNaN(edad)) {
+            edad = prompt("ingrese su edad correcta: ");
+        }
+        
+        do {
+            poblacion = prompt("ingrese su poblacion: ");
+        } while (!isNaN(poblacion));
+        
+
+    </script>
+
+</head>
+<body>
+    <script>document.write("Nombre: "+nombre+"<br>")</script>
+    <script>document.write("edad: "+edad+"<br>")</script>
+    <script>document.write("poblacion: "+poblacion+"<br>")</script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Flujo</title>
+
+    
+    <script>
+
+        var nombre, edad, poblacion;
+        
+        nombre = prompt("ingrese su nombre: ", "Nombre....");
+
+        while(!isNaN(nombre)){
+            nombre = prompt("ingrese su nombre: ", "Nombre....");
+        }
+
+        edad = prompt("ingrese su edad: ", "edad....");
+        
+        while (edad < 0 || edad > 105 || isNaN(edad)) {
+            edad = prompt("ingrese su edad correcta: ");
+        }
+
+        poblacion = prompt("ingrese su poblacion: ");
+
+    </script>
+
+</head>
+<body>
+    <script>document.write("Nombre: "+nombre+"<br>")</script>
+    <script>document.write("edad: "+edad+"<br>")</script>
+    <script>document.write("poblacion: "+poblacion+"<br>")</script>
+</body>
+>>>>>>> 143d5181b1370e7f66fc9cd73e3f04ebde472b58
+</html>

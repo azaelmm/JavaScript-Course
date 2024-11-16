@@ -1,0 +1,126 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+
+</head>
+<body>
+    
+    <table border="4">
+        
+        <th>MENSAJES CONSOLA:</th>
+
+        <tr>
+            <td>
+                <label for="testfield">Mensaje:</label>
+                <input type="text" name="testfield" id="c_mensaje">
+            </td>
+
+            <td>
+                <label for="testfield2">Intentos:</label>
+                <input type="text" name="testfield2" id="c_intentos">
+            </td>
+        </tr>
+    </table>
+
+    <script>
+
+        var numRandom = Math.round(Math.random()*100);
+        var numIngresadoCliente = 0;
+        var intentos = 0;
+
+        var mensaje = document.getElementById("c_mensaje");
+        var intentos_consumidos = document.getElementById("c_intentos");
+        
+        do {
+            
+            numIngresadoCliente = parseInt(prompt("Ingresa un número entre 0 y 100:"));
+
+            if (numRandom > numIngresadoCliente) {
+                mensaje.value = "El numero secreto es mayor ";
+                mensaje.style.fontSize= "18px";
+            }else if (numRandom <numIngresadoCliente) {
+                mensaje.value = "El numero secreto es menor ";
+                mensaje.style.fontSize= "18px";
+            } else {
+                mensaje.value = "FELICITACIONES, GANASTE!!!!" + " - Intentos: "+intentos;
+            }
+
+            intentos++;
+            intentos_consumidos.value=intentos;
+            intentos_consumidos.style.fontSize= "18px";
+            intentos_consumidos.style.color= "red";
+            intentos_consumidos.style.textAlign= "center";
+
+        } while (numIngresadoCliente != numRandom);
+        
+    </script>
+
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+
+</head>
+<body>
+    
+    <table border="4">
+        
+        <th>MENSAJES CONSOLA:</th>
+
+        <tr>
+            <td>
+                <label for="testfield">Mensaje:</label>
+                <input type="text" name="testfield" id="c_mensaje">
+            </td>
+
+            <td>
+                <label for="testfield2">Intentos:</label>
+                <input type="text" name="testfield2" id="c_intentos">
+            </td>
+        </tr>
+    </table>
+
+    <script>
+
+        var numRandom = Math.round(Math.random()*100);
+        var numIngresadoCliente = 0;
+        var intentos = 0;
+
+        var mensaje = document.getElementById("c_mensaje");
+        var intentos_consumidos = document.getElementById("c_intentos");
+        
+        do {
+            
+            numIngresadoCliente = parseInt(prompt("Ingresa un número entre 0 y 100:"));
+
+            if (numRandom > numIngresadoCliente) {
+                mensaje.value = "El numero secreto es mayor ";
+                mensaje.style.fontSize= "18px";
+            }else if (numRandom <numIngresadoCliente) {
+                mensaje.value = "El numero secreto es menor ";
+                mensaje.style.fontSize= "18px";
+            } else {
+                mensaje.value = "FELICITACIONES, GANASTE!!!!" + " - Intentos: "+intentos;
+            }
+
+            intentos++;
+            intentos_consumidos.value=intentos;
+            intentos_consumidos.style.fontSize= "18px";
+            intentos_consumidos.style.color= "red";
+            intentos_consumidos.style.textAlign= "center";
+
+        } while (numIngresadoCliente != numRandom);
+        
+    </script>
+
+</body>
+>>>>>>> 143d5181b1370e7f66fc9cd73e3f04ebde472b58
+</html>

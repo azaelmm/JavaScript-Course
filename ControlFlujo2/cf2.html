@@ -1,0 +1,88 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Flujo</title>
+
+    <script>
+
+        var num1= prompt("ingrese el primer numero: ");
+        var num2= prompt("ingrese el segundo numero: ");
+
+        alert(typeof(num1));
+        alert(typeof(num2));
+
+        var operacion= prompt("¿Que operacion deseas realizar? suma/resta/multiplicación/división");
+        var meses=["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", 
+        "octubre", "noviembre", "diciembre"];
+
+        var contador = 0;
+        
+        if(operacion=="suma"){
+            alert(parseInt(num1)+parseInt(num2));
+        }else if (operacion=="resta"){
+            alert(parseInt(num1)-parseInt(num2));
+        }else if (operacion=="multiplicacion" || operacion=="multiplicación"){
+            alert(parseInt(num1)*parseInt(num2));
+        }else if (operacion=="division" || operacion=="división"){
+            alert(parseInt(num1)/parseInt(num2));
+        }
+
+        while (contador<meses.length) {
+            document.write(meses[contador]+" ");
+            contador++;
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Flujo</title>
+
+    <script>
+
+        var num1= prompt("ingrese el primer numero: ");
+        var num2= prompt("ingrese el segundo numero: ");
+
+        alert(typeof(num1));
+        alert(typeof(num2));
+
+        var operacion= prompt("¿Que operacion deseas realizar? suma/resta/multiplicación/división");
+        var meses=["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", 
+        "octubre", "noviembre", "diciembre"];
+
+        var contador = 0;
+        
+        if(operacion=="suma"){
+            alert(parseInt(num1)+parseInt(num2));
+        }else if (operacion=="resta"){
+            alert(parseInt(num1)-parseInt(num2));
+        }else if (operacion=="multiplicacion" || operacion=="multiplicación"){
+            alert(parseInt(num1)*parseInt(num2));
+        }else if (operacion=="division" || operacion=="división"){
+            alert(parseInt(num1)/parseInt(num2));
+        }
+
+        while (contador<meses.length) {
+            document.write(meses[contador]+" ");
+            contador++;
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+>>>>>>> 143d5181b1370e7f66fc9cd73e3f04ebde472b58
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <script>
+
+        $(document).ready(function(){
+            $("#carrete img").hide();
+            
+            $("#anuncio").width(500)
+            .height(500)
+            .text("¡VENDE!")
+            .hide()
+            .fadeIn(7000);
+
+        }); 
+
+
+    </script>
+
+    <style>
+
+        #anuncio{
+            background-color: black;
+            color: white;
+            font-size: 24px;
+        }
+
+    </style>
+
+</head>
+<body style="background-color: blue;">
+    
+    <h1 style="color: aliceblue;">Hola mundo</h1>
+    <p>mi primer dia con JQuery</p>
+
+    <div id="anuncio">
+        <p>¡COMPRA!</p>
+    </div>
+
+    <div id="carrete">
+        <img src="city.jpg" alt="" width="250" height="175">
+        <img src="forest.jpg" alt="" width="250" height="175">
+        <img src="mountains.jpg" alt="" width="250" height="175">
+        <img src="sunset.jpg" alt="" width="250" height="175">
+    </div>
+    
+    <!-- <script>
+    
+        var anuncio = document.getElementById("anuncio");
+
+        anuncio.style.width="500px";
+        anuncio.style.height="500px";
+
+        anuncio.innerHTML="¡VENDE!";
+
+    </script> -->
+
+</body>
+</html>

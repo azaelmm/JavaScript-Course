@@ -1,0 +1,132 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Con JavaScript</title>
+
+    <script>
+
+        var repetir = "si"
+
+        function suma(num1, num2) {
+            alert("El resultado de la suma es: "+(num1+num2));
+        }
+
+        function resta(num1, num2) {
+            alert("El resultado de la resta es: "+(num1-num2));
+        }
+
+        function multiplicacion(num1, num2) {
+            alert("El resultado de la multiplicacion es: "+(num1*num2));
+        }
+
+        function division(num1, num2) {
+            alert("El resultado de la division es: "+(num1/num2));
+        }
+
+        do {
+
+        var operacion = prompt("¿Que operacion desea realizar?");
+
+        var operador1 = parseInt(prompt("ingrese el primer numero: "));
+        var operador2 = parseInt(prompt("ingrese el segundo numero: "));
+        
+        operacion = operacion.toLowerCase();
+
+        if (operacion == "sumar") {
+            suma(operador1, operador2);
+
+        }else if (operacion == "restar") {
+            resta(operador1, operador2);
+
+        }else if (operacion == "multiplicar"){
+            multiplicacion(operador1, operador2);
+
+        }else if (operacion == "dividir"){
+            division(operador1, operador2);
+
+        }else{
+            alert("La operacion no existe.")
+        }
+
+        repetir = prompt("Quieres realizar otra operacion??")
+        repetir = repetir.toLowerCase
+
+        } while (repetir != "no");
+
+
+
+    </script>
+</head>
+<body style="background-color: blueviolet;">
+    
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Con JavaScript</title>
+
+    <script>
+
+        var repetir = "si"
+
+        function suma(num1, num2) {
+            alert("El resultado de la suma es: "+(num1+num2));
+        }
+
+        function resta(num1, num2) {
+            alert("El resultado de la resta es: "+(num1-num2));
+        }
+
+        function multiplicacion(num1, num2) {
+            alert("El resultado de la multiplicacion es: "+(num1*num2));
+        }
+
+        function division(num1, num2) {
+            alert("El resultado de la division es: "+(num1/num2));
+        }
+
+        do {
+
+        var operacion = prompt("¿Que operacion desea realizar?");
+
+        var operador1 = parseInt(prompt("ingrese el primer numero: "));
+        var operador2 = parseInt(prompt("ingrese el segundo numero: "));
+        
+        operacion = operacion.toLowerCase();
+
+        if (operacion == "sumar") {
+            suma(operador1, operador2);
+
+        }else if (operacion == "restar") {
+            resta(operador1, operador2);
+
+        }else if (operacion == "multiplicar"){
+            multiplicacion(operador1, operador2);
+
+        }else if (operacion == "dividir"){
+            division(operador1, operador2);
+
+        }else{
+            alert("La operacion no existe.")
+        }
+
+        repetir = prompt("Quieres realizar otra operacion??")
+        repetir = repetir.toLowerCase
+
+        } while (repetir != "no");
+
+
+
+    </script>
+</head>
+<body style="background-color: blueviolet;">
+    
+</body>
+>>>>>>> 143d5181b1370e7f66fc9cd73e3f04ebde472b58
+</html>
