@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+            var elemento = document.getElementById("cerrar");
+            elemento.addEventListener("click", cerrar_banner, false);
+            // document.getElementById("cerrar").addEventListener("click", cerrar_banner, false);
+
+            document.getElementById("i1").addEventListener("click", carrito, false);
+
+        });
+
+        function cerrar_banner(params) {
+
+            $("#banner").remove();
+        
+        }
+
+        function carrito(params) {
+            
+            $("#i1").replaceWith("<div id='sustitucion'>Añadido al carrito!</div>")
+
+        }
+
+    </script>
+
+    <style>
+
+        #banner{
+            background-color: red;
+            width: 450px;
+            height: 300px;
+            position: absolute;
+            left: 400px;
+            top: 50px;
+            font-size: 36px;
+            text-align: center;
+            border-radius: 50px;
+        }
+
+        img {
+            float: left;
+            margin: 15px;
+            width: 350px;
+            height: 200px;
+        }
+
+        #cerrar{
+            background-color: violet;
+        }
+
+        #sustitucion{
+            float: left;
+            margin: 15px;
+            width: 300px;
+            height: 200px;
+            font-size: 36px;
+        }
+
+    </style>
+
+</head>
+
+<body style="background-color: blue;">
+
+    <div id="banner">
+        Banner de prueba
+        <p id="cerrar">Cerrar</p>
+    </div>
+
+    <div id="carrete">
+        <img src="city.jpg" alt="" width="250" height="175" id="i1">
+        <img src="forest.jpg" alt="" width="250" height="175" id="i2">
+        <img src="mountains.jpg" alt="" width="250" height="175" id="i3">
+        <img src="sunset.jpg" alt="" width="250" height="175" id="i4">
+    </div>
+
+</body>
+</html>
